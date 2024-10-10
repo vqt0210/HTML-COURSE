@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      text-align: left;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 50px;
+      margin-right: 10px;
+    }
+    .school-info {
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+    .website-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #007bff;
+      margin-top: 5px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    .submit-container {
+      display: flex;
+      justify-content: flex-start;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .forgot-password {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .forgot-link {
+    color: #007bff; 
+    text-decoration: none; 
+    }
+    .forgot-link:hover {
+    text-decoration: underline; 
+    color: #0056b3; 
+    }
+
+
+    .language {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .language select {
+      padding: 8px;
+      border-radius: 5px;
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+    }
+    .cookies-button {
+      background-color: #e9ecef;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      color: #555;
+      margin-left: 10px;
+    }
+    .separator {
+      background-color: #ccc;
+      height: 20px; 
+      width: 1px;
+      margin: 0 10px;
+    }
+    .cookies-button:hover {
+      background-color: #d1d3d4; 
+      color: #555; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="header">
+      <img src="UIT.png" alt="Logo" class="logo">
+      <div class="school-info">
+        ĐẠI HỌC QUỐC GIA TP.HỒ CHÍ MINH <br>
+        TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN <br>
+        <span class="website-name">WEBSITE CÁC MÔN HỌC</span> 
+      </div>
+    </div>
+    <form action="#">
+      <input type="text" placeholder="Tên đăng nhập" required>
+      <input type="password" placeholder="Mật khẩu" required>
+      <div class="submit-container">
+        <button type="submit">Đăng nhập</button>
+      </div>
+      <div class="forgot-password">
+        <a href="#" class="forgot-link">Quên mật khẩu?</a> 
+      </div>
+      <div class="language">
+        <select>
+          <option value="vi">Vietnamese (vi)</option>
+        </select>
+        <div class="separator"></div>
+        <button class="cookies-button">Thông báo từ các Cookies</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

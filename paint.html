@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="paint-app">
+        <div class="toolbar">
+            <!-- Clipboard Section -->
+            <div class="section clipboard">
+                <button><i class="fas fa-paste"></i> Paste</button>
+                <button><i class="fas fa-cut"></i> Cut</button>
+                <button><i class="fas fa-copy"></i> Copy</button>
+            </div>
+
+            <!-- Image Tools Section -->
+            <div class="section image">
+                <button><i class="fas fa-mouse-pointer"></i> Select</button>
+                <button><i class="fas fa-crop"></i> Crop</button>
+                <button><i class="fas fa-expand"></i> Resize</button>
+                <button><i class="fas fa-undo"></i> Rotate</button>
+            </div>
+
+            <!-- Drawing Tools Section -->
+            <div class="section tools">
+                <button><i class="fas fa-pencil-alt"></i> Pencil</button>
+                <button><i class="fas fa-fill-drip"></i> Fill</button>
+                <button><i class="fas fa-text-height"></i> Text</button>
+                <button><i class="fas fa-eraser"></i> Eraser</button>
+                <button><i class="fas fa-eye-dropper"></i> Color Picker</button>
+                <button><i class="fas fa-search-plus"></i> Magnifier</button>
+            </div>
+
+            <!-- Shapes Section -->
+            <div class="section shapes">
+                <button><i class="fas fa-paint-brush"></i> Brush</button>
+                <button><i class="fas fa-square"></i> Square</button>
+                <button><i class="fas fa-circle"></i> Circle</button>
+                <button><i class="fas fa-star"></i> Star</button>
+                <button><i class="fas fa-draw-polygon"></i> Polygon</button>
+            </div>
+
+            <!-- Colors Section -->
+            <div class="section colors">
+                <div class="color-picker">
+                    <div class="color red"></div>
+                    <div class="color green"></div>
+                    <div class="color blue"></div>
+                    <div class="color yellow"></div>
+                    <div class="color purple"></div>
+                    <div class="color orange"></div>
+                    <div class="color black"></div>
+                    <div class="color white"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Canvas Area -->
+        <div class="canvas-container">
+            <canvas id="paintCanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="paint.js"></script>
+</body>
+</html>
